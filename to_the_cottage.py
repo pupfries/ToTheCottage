@@ -283,9 +283,12 @@ class ToTheCottage:
             print(f"\n{question}\n")
             time.sleep(0.5)
             print(f"\nType one of the following:")
-            for self.choice in self.cho ""
+            for self.choice in self.choices:
+                print(self.choice)
+            
+    def _give_choices(self, *args):
+        """Creates choices for the user to select from."""
         self.choices.clear()
-        # Adds choices to the list for question to player
         for arg in args:
             self.choices.append(arg)
 
